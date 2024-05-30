@@ -2,5 +2,5 @@
 
 namespace Application.Users.Command.CreateUser
 {
-    public record CreateUserCommand(string Username, string Password, string Email, string Role, ContactInformationDto? ContactInformation);
+    public record CreateUserCommand(string Username, string Password, string Email, string Role, string? Expertise, ContactInformationDto? ContactInformation);
 }
