@@ -1,4 +1,4 @@
-﻿using Bookify.Domain.Abstractions;
+﻿using Domain.Abstraction;
 
 namespace Domain.Abstraction
 {
