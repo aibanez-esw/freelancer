@@ -1,4 +1,5 @@
 ﻿using Domain.Abstraction;
+using Domain.Users.ValueObjects;
 
 namespace Domain.Users.Entities
 {
@@ -10,11 +11,14 @@ namespace Domain.Users.Entities
 
         public string Email { get; private set; }
 
-        private User(string username, string password, string email)
+        public Role Role { get; private set; }
+
+        protected User(string username, string password, string email, Role role)
         {
             Username = username;
             Password = password;
             Email = email;
+            Role = role;
         }
     }
 }
