@@ -7,7 +7,7 @@ namespace Domain.Users.Repository
         Task AddAsync(User user);
         Task UpdateAsync(User user);
         Task DeleteAsync(User user);
-        Task<User> GetAsync(Guid uuid);
+        Task<User?> GetAsync(Guid uuid);
         Task<IEnumerable<User>> GetAllAsync();
     }
 }
